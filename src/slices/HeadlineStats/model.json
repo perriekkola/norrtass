@@ -1,0 +1,83 @@
+{
+  "type": "SharedSlice",
+  "id": "headline_stats",
+  "name": "HeadlineStats",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Headline, optional tagline and link, description, and a dynamic number of stat cards.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "stats": {
+          "type": "Group",
+          "config": {
+            "label": "Stats",
+            "fields": {
+              "stat_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Stat Label"
+                }
+              },
+              "stat_value": {
+                "type": "Text",
+                "config": {
+                  "label": "Stat Value"
+                }
+              },
+              "stat_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Stat Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink"
+                }
+              }
+            }
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

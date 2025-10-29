@@ -1,0 +1,110 @@
+{
+  "type": "SharedSlice",
+  "id": "image_card_feature",
+  "name": "ImageCardFeature",
+  "variations": [
+    {
+      "id": "default_left_overlay",
+      "name": "Default",
+      "description": "Content is left-aligned and overlaid on top of the background image with a primary button.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image"
+          }
+        },
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "allowText": true,
+            "repeat": true,
+            "select": null,
+            "allowTargetBlank": true,
+            "variants": [
+              "default",
+              "secondary",
+              "outline"
+            ]
+          }
+        },
+        "add_blur": {
+          "type": "Boolean",
+          "config": {
+            "label": "Add Blur",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "add_overlay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Add Overlay",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "dark_texts": {
+          "type": "Boolean",
+          "config": {
+            "label": "Dark Texts",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "border_trail": {
+          "type": "Boolean",
+          "config": {
+            "label": "Border Trail",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

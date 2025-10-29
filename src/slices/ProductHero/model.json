@@ -1,0 +1,119 @@
+{
+  "id": "product_hero",
+  "type": "SharedSlice",
+  "name": "ProductHero",
+  "description": "ProductHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "product": {
+          "type": "Link",
+          "config": {
+            "label": "Product",
+            "select": "document",
+            "repeat": false,
+            "customtypes": [
+              {
+                "id": "page",
+                "fields": [
+                  "previous_price",
+                  {
+                    "id": "sizes",
+                    "fields": [
+                      "size",
+                      "disabled"
+                    ]
+                  },
+                  "stripe_product_id"
+                ]
+              }
+            ]
+          }
+        },
+        "media": {
+          "type": "Group",
+          "config": {
+            "label": "Media",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "video": {
+                "type": "Link",
+                "config": {
+                  "label": "Video",
+                  "placeholder": "",
+                  "select": "media",
+                  "allowText": false
+                }
+              }
+            }
+          }
+        },
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,heading2,heading3,heading4,hyperlink,list-item,o-list-item,embed,preformatted"
+          }
+        },
+        "cart_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Cart Button Label",
+            "placeholder": "Add to Cart"
+          }
+        },
+        "buy_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Buy Button Label",
+            "placeholder": "Buy this item"
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

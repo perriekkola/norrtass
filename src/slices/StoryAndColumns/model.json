@@ -1,0 +1,62 @@
+{
+  "type": "SharedSlice",
+  "id": "story_and_columns",
+  "name": "StoryAndColumns",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a story section on top with multiple flexible information columns below.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "intro_text": {
+          "type": "Text",
+          "config": {
+            "label": "Intro Text",
+            "placeholder": ""
+          }
+        },
+        "columns": {
+          "type": "Group",
+          "config": {
+            "label": "Columns",
+            "fields": {
+              "column_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Content",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink,heading3,heading4,list-item,o-list-item,embed,preformatted"
+                }
+              },
+              "button": {
+                "type": "Link",
+                "config": {
+                  "label": "Button",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

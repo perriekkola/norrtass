@@ -1,0 +1,62 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"headline": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Cabin"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Anim fugiat esse velit ea officia voluptate ut esse id elit sint labore proident. Ex pariatur nulla cillum veniam laboris aliqua exercitation consectetur minim aliquip nostrud."
+						}
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "0ca38b75-39a2-4c7d-847a-5b91ed421028",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://twitter.com",
+							"text": "salmon",
+							"variant": "outline"
+						}
+					}
+				]
+			},
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cupidatat duis amet ad velit quis nulla et et sunt nulla aliquip qui cillum sit. Ut elit quis mollit fugiat consequat et. Ex labore magna reprehenderit aliqua reprehenderit duis magna deserunt dolore eu Lorem velit proident."
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,111 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore proident qui excepteur sunt. Ut et minim aliqua cupidatat sunt exercitation labore pariatur occaecat officia ullamco ullamco aute. Ea nisi qui ullamco sit consequat velit deserunt cupidatat reprehenderit nulla."
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Standard"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do consectetur Lorem deserunt anim excepteur duis tempor aliquip nostrud cillum aliqua sit reprehenderit fugiat mollit. Proident enim ad sunt reprehenderit ipsum duis aute. Velit non id commodo incididunt quis ex cupidatat voluptate."
+						}
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "c4b5c82b-38ea-44d5-b1b5-1e4194256497",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://slicemachine.dev",
+							"text": "increase",
+							"variant": "secondary"
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"featured_content": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"link",
+								{
+									"key": "d1db2fb6-4703-419d-ac88-3f0f5387b765",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"parent_to_fetch_from": {
+				"__TYPE__": "FieldContent",
+				"value": "allow",
+				"type": "Text"
+			},
+			"show_dates": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"show_tags": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"items_to_fetch": {
+				"__TYPE__": "FieldContent",
+				"value": "61",
+				"type": "Number"
+			},
+			"load_more_button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "contrast",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

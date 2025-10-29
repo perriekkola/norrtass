@@ -1,0 +1,151 @@
+{
+  "id": "related_content_grid",
+  "type": "SharedSlice",
+  "name": "RelatedContentGrid",
+  "description": "RelatedContentGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "default",
+              "secondary",
+              "outline",
+              "ghost"
+            ]
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "featured_content": {
+          "type": "Group",
+          "config": {
+            "label": "Featured Content",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    {
+                      "id": "page",
+                      "fields": [
+                        "page_title",
+                        "page_description",
+                        {
+                          "id": "tag",
+                          "customtypes": [
+                            {
+                              "id": "tag",
+                              "fields": [
+                                "tag_name",
+                                "tag_color"
+                              ]
+                            }
+                          ]
+                        },
+                        "featured_image",
+                        "publish_date"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "parent_to_fetch_from": {
+          "type": "Text",
+          "config": {
+            "label": "Parent to Fetch From",
+            "placeholder": "You can use a parent page uid (\"articles\") to fetch from instead"
+          }
+        },
+        "show_dates": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Dates",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "show_tags": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Tags",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "items_to_fetch": {
+          "type": "Number",
+          "config": {
+            "label": "Items to Fetch",
+            "placeholder": "Leave empty to fetch max"
+          }
+        },
+        "load_more_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Load More Button Label",
+            "placeholder": "If there is a lot of content we will paginate with a button"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

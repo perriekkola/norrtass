@@ -1,0 +1,145 @@
+{
+  "id": "products_grid",
+  "type": "SharedSlice",
+  "name": "ProductsGrid",
+  "description": "ProductsGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "default",
+              "secondary",
+              "outline",
+              "ghost"
+            ]
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "products": {
+          "type": "Group",
+          "config": {
+            "label": "Products",
+            "repeat": true,
+            "fields": {
+              "product": {
+                "type": "Link",
+                "config": {
+                  "label": "Product",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    {
+                      "id": "page",
+                      "fields": [
+                        "page_title",
+                        "page_description",
+                        "featured_image",
+                        {
+                          "id": "sizes",
+                          "fields": [
+                            "size",
+                            "disabled"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cta_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Button Label",
+            "placeholder": ""
+          }
+        },
+        "tag_to_fetch_from": {
+          "type": "Link",
+          "config": {
+            "label": "Tag to Fetch From",
+            "select": "document",
+            "repeat": false,
+            "customtypes": [
+              "tag"
+            ]
+          }
+        },
+        "parent_to_fetch_from": {
+          "type": "Text",
+          "config": {
+            "label": "Parent to Fetch From",
+            "placeholder": "You can use a parent page uid (\"products\") to fetch from instead"
+          }
+        },
+        "items_to_fetch": {
+          "type": "Number",
+          "config": {
+            "label": "Items to Fetch",
+            "placeholder": "Leave empty to fetch max"
+          }
+        },
+        "load_more_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Load More Button Label",
+            "placeholder": "If there is a lot of content we will paginate with a button"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

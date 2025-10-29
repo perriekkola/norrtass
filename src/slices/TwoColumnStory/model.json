@@ -1,0 +1,52 @@
+{
+  "type": "SharedSlice",
+  "id": "two_column_story",
+  "name": "TwoColumnStory",
+  "variations": [
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Default variation with large headline and detailed content, including headings, paragraphs, lists, and quotes.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "intro_text": {
+          "type": "Text",
+          "config": {
+            "label": "Intro Text",
+            "placeholder": ""
+          }
+        },
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item,heading2,heading3,heading4,embed,image,preformatted"
+          }
+        },
+        "reverse_columns": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse Columns",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

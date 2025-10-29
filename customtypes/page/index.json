@@ -1,0 +1,258 @@
+{
+  "id": "page",
+  "label": "Page",
+  "format": "page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        }
+      },
+      "page_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page Title",
+          "placeholder": "Used for breadcrumbs, cards, etc."
+        }
+      },
+      "parent": {
+        "type": "Link",
+        "config": {
+          "label": "Parent",
+          "select": "document",
+          "repeat": false,
+          "customtypes": [
+            {
+              "id": "page",
+              "fields": [
+                {
+                  "id": "parent",
+                  "customtypes": [
+                    {
+                      "id": "page",
+                      "fields": ["parent", "page_title"]
+                    }
+                  ]
+                },
+                "page_title"
+              ]
+            }
+          ]
+        }
+      },
+      "page_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page Description",
+          "placeholder": "Optional: Used in cards and other summaries"
+        }
+      },
+      "featured_image": {
+        "type": "Image",
+        "config": {
+          "label": "Featured Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "tag": {
+        "type": "Link",
+        "config": {
+          "label": "Tag",
+          "select": "document",
+          "repeat": false,
+          "customtypes": [
+            {
+              "id": "tag",
+              "fields": ["tag_name", "tag_color"]
+            }
+          ]
+        }
+      },
+      "publish_date": {
+        "type": "Date",
+        "config": {
+          "label": "Publish Date",
+          "placeholder": "Optional: Used for articles, etc."
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "products_grid": {
+              "type": "SharedSlice"
+            },
+            "product_hero": {
+              "type": "SharedSlice"
+            },
+            "related_content_grid": {
+              "type": "SharedSlice"
+            },
+            "mega_cards": {
+              "type": "SharedSlice"
+            },
+            "cta_card": {
+              "type": "SharedSlice"
+            },
+            "media_gallery": {
+              "type": "SharedSlice"
+            },
+            "contact_info_with_hours": {
+              "type": "SharedSlice"
+            },
+            "story_and_columns": {
+              "type": "SharedSlice"
+            },
+            "feature_grid3": {
+              "type": "SharedSlice"
+            },
+            "pricing_table": {
+              "type": "SharedSlice"
+            },
+            "hero_basic": {
+              "type": "SharedSlice"
+            },
+            "feature_grid_2": {
+              "type": "SharedSlice"
+            },
+            "feature_grid_showcase": {
+              "type": "SharedSlice"
+            },
+            "two_column_story": {
+              "type": "SharedSlice"
+            },
+            "testimonial_carousel": {
+              "type": "SharedSlice"
+            },
+            "testimonial_detail": {
+              "type": "SharedSlice"
+            },
+            "infinite_text_marquee": {
+              "type": "SharedSlice"
+            },
+            "headline_stats": {
+              "type": "SharedSlice"
+            },
+            "feature_with_image_grid": {
+              "type": "SharedSlice"
+            },
+            "hero_with_media": {
+              "type": "SharedSlice"
+            },
+            "logo_showcase": {
+              "type": "SharedSlice"
+            },
+            "headline_image_cta": {
+              "type": "SharedSlice"
+            },
+            "contact_split": {
+              "type": "SharedSlice"
+            },
+            "contact_details_with_map": {
+              "type": "SharedSlice"
+            },
+            "media_feature": {
+              "type": "SharedSlice"
+            },
+            "carousel_gallery": {
+              "type": "SharedSlice"
+            },
+            "faq_split_layout": {
+              "type": "SharedSlice"
+            },
+            "feature_grid": {
+              "type": "SharedSlice"
+            },
+            "image_card_feature": {
+              "type": "SharedSlice"
+            },
+            "headline_media_call_to_action": {
+              "type": "SharedSlice"
+            },
+            "centered_hero": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Meta Image",
+          "constraint": {
+            "width": 2400,
+            "height": 1260
+          },
+          "thumbnails": []
+        }
+      }
+    },
+    "Product Data": {
+      "stripe_product_id": {
+        "type": "Text",
+        "config": {
+          "label": "Stripe Product ID",
+          "placeholder": ""
+        }
+      },
+      "previous_price": {
+        "type": "Number",
+        "config": {
+          "label": "Previous Price",
+          "placeholder": ""
+        }
+      },
+      "sizes": {
+        "type": "Group",
+        "config": {
+          "label": "Sizes",
+          "repeat": true,
+          "fields": {
+            "size": {
+              "type": "Text",
+              "config": {
+                "label": "Size",
+                "placeholder": ""
+              }
+            },
+            "disabled": {
+              "type": "Boolean",
+              "config": {
+                "label": "Disabled",
+                "placeholder_false": "false",
+                "placeholder_true": "true",
+                "default_value": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

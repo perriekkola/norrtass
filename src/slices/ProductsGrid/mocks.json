@@ -1,0 +1,111 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim id do officia. Cillum ut ex sit aute duis id fugiat eu esse officia do cupidatat. Labore dolore consectetur cillum adipisicing et incididunt."
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Title"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ut laboris reprehenderit ullamco sint culpa occaecat id voluptate do ut enim ullamco ipsum. Dolor sint non qui sunt in enim. Consectetur sunt pariatur do dolore adipisicing officia excepteur sit aliqua ipsum anim velit exercitation elit labore."
+						}
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "18412d77-17ca-4b10-8b1d-f962a30dc43d",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://google.com",
+							"text": "chapter",
+							"variant": "secondary"
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"products": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"product",
+								{
+									"key": "a096fe0d-a463-460c-802a-3a8688398293",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"items_to_fetch": {
+				"__TYPE__": "FieldContent",
+				"value": "43",
+				"type": "Number"
+			},
+			"load_more_button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "said",
+				"type": "Text"
+			},
+			"parent_to_fetch_from": {
+				"__TYPE__": "FieldContent",
+				"value": "happen",
+				"type": "Text"
+			},
+			"cta_button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "his",
+				"type": "Text"
+			},
+			"tag_to_fetch_from": {
+				"key": "e29e9742-20bb-4734-8368-c1f933fb69bd",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "mock_document_id"
+				}
+			}
+		},
+		"items": []
+	}
+]

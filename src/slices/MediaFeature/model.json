@@ -1,0 +1,87 @@
+{
+  "type": "SharedSlice",
+  "id": "media_feature",
+  "name": "MediaFeature",
+  "variations": [
+    {
+      "id": "text_left_media_right",
+      "name": "Text left, media right",
+      "description": "Displays headline, supporting text, and call-to-action on the left, with an image or media on the right.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "allowText": true,
+            "repeat": true,
+            "select": null,
+            "allowTargetBlank": true,
+            "variants": [
+              "secondary",
+              "outline"
+            ]
+          }
+        },
+        "media": {
+          "type": "Image",
+          "config": {
+            "label": "Media"
+          }
+        },
+        "media_position": {
+          "type": "Select",
+          "config": {
+            "label": "Media Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"testimonials": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"rating",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "68",
+									"type": "Number"
+								}
+							],
+							[
+								"quote",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Anim sint eu pariatur qui. Pariatur eu nisi amet ut consequat mollit mollit ea. Ipsum mollit nisi ex."
+											}
+										}
+									]
+								}
+							],
+							[
+								"user_avatar",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+										"width": 12288,
+										"height": 16384
+									},
+									"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+									"width": 12288,
+									"height": 16384,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "never",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"user_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "base",
+									"type": "Text"
+								}
+							],
+							[
+								"user_job_title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "shinning",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

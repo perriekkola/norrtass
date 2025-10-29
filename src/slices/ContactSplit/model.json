@@ -1,0 +1,179 @@
+{
+  "type": "SharedSlice",
+  "id": "contact_split",
+  "name": "ContactSplit",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default layout with contact intro, key details and a form for user submissions.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "contact_details": {
+          "type": "Group",
+          "config": {
+            "label": "Contact Details",
+            "repeat": true,
+            "fields": {
+              "type": {
+                "type": "Select",
+                "config": {
+                  "label": "Contact Type",
+                  "placeholder": "",
+                  "options": [
+                    "phone",
+                    "email",
+                    "address"
+                  ]
+                }
+              },
+              "value": {
+                "type": "Text",
+                "config": {
+                  "label": "Contact Value"
+                }
+              },
+              "text_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Text Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": false,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "default",
+              "secondary",
+              "outline",
+              "ghost"
+            ]
+          }
+        },
+        "form_fields": {
+          "type": "Group",
+          "config": {
+            "label": "Form Fields",
+            "repeat": true,
+            "fields": {
+              "input_type": {
+                "type": "Select",
+                "config": {
+                  "label": "Input Type",
+                  "placeholder": "",
+                  "options": [
+                    "text",
+                    "email"
+                  ],
+                  "default_value": "text"
+                }
+              },
+              "field_type": {
+                "type": "Select",
+                "config": {
+                  "label": "Field Type",
+                  "placeholder": "",
+                  "options": [
+                    "input",
+                    "textarea"
+                  ],
+                  "default_value": "input"
+                }
+              },
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "Placeholder",
+                  "placeholder": ""
+                }
+              },
+              "required": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Required",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": true
+                }
+              }
+            }
+          }
+        },
+        "form_disclaimer": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Form Disclaimer",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "submit_label": {
+          "type": "Text",
+          "config": {
+            "label": "Submit Button Label",
+            "placeholder": ""
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

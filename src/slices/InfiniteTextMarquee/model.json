@@ -1,0 +1,58 @@
+{
+  "type": "SharedSlice",
+  "id": "infinite_text_marquee",
+  "name": "InfiniteTextMarquee",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a single line of infinitely scrolling text; supports custom speed/direction and repeat.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em,hyperlink",
+            "label": "Text"
+          }
+        },
+        "direction": {
+          "type": "Select",
+          "config": {
+            "label": "Scroll Direction",
+            "placeholder": "",
+            "options": [
+              "left",
+              "right"
+            ],
+            "default_value": "left"
+          }
+        },
+        "speed": {
+          "type": "Number",
+          "config": {
+            "label": "Scroll Speed"
+          }
+        },
+        "pause_on_hover": {
+          "type": "Boolean",
+          "config": {
+            "label": "Pause on Hover"
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

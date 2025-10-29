@@ -1,0 +1,157 @@
+{
+  "type": "SharedSlice",
+  "id": "contact_info_with_hours",
+  "name": "ContactInfoWithHours",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays tagline, contact heading and description, contact details with icons, actions, and a stylized schedule/hours panel.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "callout": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Callout",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,o-list-item,list-item"
+          }
+        },
+        "contact_details": {
+          "type": "Group",
+          "config": {
+            "label": "Contact Details",
+            "fields": {
+              "contact_type": {
+                "type": "Select",
+                "config": {
+                  "label": "Contact Type",
+                  "placeholder": "",
+                  "options": [
+                    "phone",
+                    "email",
+                    "address"
+                  ],
+                  "default_value": "phone"
+                }
+              },
+              "contact_value": {
+                "type": "Text",
+                "config": {
+                  "label": "Contact Value",
+                  "placeholder": ""
+                }
+              },
+              "text_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Text Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": false,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "default",
+              "secondary",
+              "outline",
+              "ghost"
+            ],
+            "select": null,
+            "allowTargetBlank": true
+          }
+        },
+        "hours_heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Hours Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3"
+          }
+        },
+        "hours_subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Hours Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "hours_rows": {
+          "type": "Group",
+          "config": {
+            "label": "Hours Rows",
+            "fields": {
+              "days": {
+                "type": "Text",
+                "config": {
+                  "label": "Days"
+                }
+              },
+              "hours": {
+                "type": "Text",
+                "config": {
+                  "label": "Hours"
+                }
+              }
+            }
+          }
+        },
+        "hours_footer": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Hours Footer",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

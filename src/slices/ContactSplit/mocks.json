@@ -1,0 +1,164 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Equal"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum aliqua ex quis minim minim culpa ullamco eiusmod ex quis consectetur minim in commodo."
+						}
+					}
+				]
+			},
+			"submit_label": {
+				"__TYPE__": "FieldContent",
+				"value": "solve",
+				"type": "Text"
+			},
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ut ad ut nostrud dolor deserunt veniam aliquip labore consectetur aliquip occaecat anim non cupidatat sint. Quis reprehenderit ipsum consectetur sit proident quis fugiat fugiat amet non officia pariatur."
+						}
+					}
+				]
+			},
+			"contact_details": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "email",
+									"type": "Select"
+								}
+							],
+							[
+								"value",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "climate",
+									"type": "Text"
+								}
+							],
+							[
+								"text_link",
+								{
+									"key": "be154c88-f3a3-4e9d-9043-fa61efe2c50c",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"form_disclaimer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore mollit incididunt veniam in cillum consectetur pariatur sit sint id ut ea excepteur. Velit nisi exercitation ea velit est minim incididunt id officia. Ut deserunt anim pariatur quis ex ullamco do duis exercitation sit deserunt non ea."
+						}
+					}
+				]
+			},
+			"form_fields": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"input_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "text",
+									"type": "Select"
+								}
+							],
+							[
+								"field_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "input",
+									"type": "Select"
+								}
+							],
+							[
+								"label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "trace",
+									"type": "Text"
+								}
+							],
+							[
+								"placeholder",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "see",
+									"type": "Text"
+								}
+							],
+							[
+								"required",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							]
+						]
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "5122ad0c-71ed-4d09-8eb4-779a8bdb4299",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "vast",
+							"variant": "ghost"
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

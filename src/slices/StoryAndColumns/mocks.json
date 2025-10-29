@@ -1,0 +1,54 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"columns": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"column_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Elit cillum enim deserunt et ex aliqua commodo duis id duis adipisicing culpa. Deserunt ipsum tempor officia in. Veniam deserunt ea deserunt."
+											}
+										}
+									]
+								}
+							],
+							[
+								"button",
+								{
+									"key": "f1493468-0fa4-4655-bc08-0794f8bafd4e",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "saddle"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"intro_text": {
+				"__TYPE__": "FieldContent",
+				"value": "wheel",
+				"type": "Text"
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,61 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "with_image",
+		"primary": {
+			"author_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+					"width": 4172,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+				"width": 4172,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "tobacco",
+				"credits": null,
+				"__TYPE__": "ImageContent"
+			},
+			"rating": {
+				"__TYPE__": "FieldContent",
+				"value": "34",
+				"type": "Number"
+			},
+			"quote": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Exercitation veniam nostrud sunt excepteur proident occaecat tempor culpa voluptate ipsum dolor voluptate irure excepteur aliquip. Anim dolore deserunt aliqua velit aute et excepteur."
+						}
+					}
+				]
+			},
+			"author_name": {
+				"__TYPE__": "FieldContent",
+				"value": "desert",
+				"type": "Text"
+			},
+			"author_role": {
+				"__TYPE__": "FieldContent",
+				"value": "horn",
+				"type": "Text"
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": []
+	}
+]

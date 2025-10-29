@@ -1,0 +1,123 @@
+{
+  "format": "custom",
+  "id": "navbar",
+  "label": "Navbar",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logo_link": {
+        "type": "Link",
+        "config": {
+          "label": "Logo Link",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": false,
+          "repeat": false
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "repeat": true,
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "select": "document",
+                "repeat": false,
+                "customtypes": [
+                  {
+                    "id": "navlink",
+                    "fields": [
+                      "main_link",
+                      "dropdown_label",
+                      {
+                        "id": "sublinks",
+                        "fields": ["link", "description", "icon"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "CTA Link",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": true,
+          "variants": ["default", "secondary", "outline", "ghost"]
+        }
+      },
+      "mobile_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile CTA Link",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false,
+          "variants": ["default", "secondary", "outline", "ghost"]
+        }
+      }
+    },
+    "Cart": {
+      "cart_title": {
+        "type": "Text",
+        "config": {
+          "label": "Cart Title",
+          "placeholder": "Cart"
+        }
+      },
+      "checkout_button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Checkout Button Label",
+          "placeholder": "Checkout"
+        }
+      },
+      "clear_button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Clear Button Label",
+          "placeholder": "Clear Cart"
+        }
+      },
+      "total_label": {
+        "type": "Text",
+        "config": {
+          "label": "Total Label",
+          "placeholder": "Total"
+        }
+      },
+      "cart_disclaimer": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Cart Disclaimer",
+          "placeholder": "Such as delivery times",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading3,heading4,strong,em,hyperlink,list-item,o-list-item,preformatted,embed"
+        }
+      }
+    }
+  }
+}

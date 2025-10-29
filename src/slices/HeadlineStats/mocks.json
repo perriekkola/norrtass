@@ -1,0 +1,86 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Nature"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui ea ut elit irure elit qui. Voluptate nostrud sunt elit enim et Lorem."
+						}
+					}
+				]
+			},
+			"stats": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"stat_label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "bat",
+									"type": "Text"
+								}
+							],
+							[
+								"stat_value",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "rule",
+									"type": "Text"
+								}
+							],
+							[
+								"stat_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Consequat ad sunt nisi ullamco fugiat nostrud dolor est do irure."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nostrud pariatur adipisicing et elit nostrud tempor voluptate non sit anim ullamco officia occaecat pariatur irure. Elit fugiat dolor laborum id fugiat voluptate fugiat aliquip velit quis sit minim magna exercitation. Deserunt et ut nostrud qui elit dolore id."
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

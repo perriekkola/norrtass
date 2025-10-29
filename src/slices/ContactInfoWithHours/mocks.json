@@ -1,0 +1,158 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Salmon"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do id irure ea fugiat dolor officia mollit minim minim anim voluptate ad laborum nulla officia. Minim ad occaecat aliqua nisi commodo nulla minim. Ipsum amet tempor mollit sunt in aute anim sit."
+						}
+					}
+				]
+			},
+			"contact_details": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"contact_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "phone",
+									"type": "Select"
+								}
+							],
+							[
+								"contact_value",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "section",
+									"type": "Text"
+								}
+							],
+							[
+								"text_link",
+								{
+									"key": "23817ec9-6476-447c-87e5-7cea6064c152",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"hours_heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Stove"
+						}
+					}
+				]
+			},
+			"hours_subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cillum reprehenderit ullamco ut nostrud irure et dolore magna ut nulla non proident eu tempor."
+						}
+					}
+				]
+			},
+			"hours_rows": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"days",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "weigh",
+									"type": "Text"
+								}
+							],
+							[
+								"hours",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "several",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Officia in Lorem magna est officia adipisicing tempor et eiusmod tempor commodo duis ut. Excepteur velit adipisicing officia duis duis mollit ad do. Nulla esse enim esse voluptate mollit duis duis occaecat voluptate aliquip eiusmod cillum pariatur nisi Lorem."
+						}
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "b67ad513-d2b2-4c8e-a9b8-8435a7d0f8ba",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "dark",
+							"variant": "secondary"
+						}
+					}
+				]
+			},
+			"hours_footer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ipsum nostrud ullamco adipisicing eiusmod velit consequat adipisicing nulla ipsum. Consectetur nulla fugiat enim qui nostrud laborum nulla. Eiusmod veniam do amet sunt anim adipisicing eiusmod exercitation velit reprehenderit consequat ipsum ut duis."
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

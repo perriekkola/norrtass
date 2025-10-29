@@ -1,0 +1,143 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Receive"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat velit qui qui non nisi reprehenderit exercitation voluptate sint sunt. Consectetur nisi laborum adipisicing dolore. Tempor irure occaecat exercitation duis eu esse cillum aute nulla est et."
+						}
+					}
+				]
+			},
+			"plans": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"plan_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "thee",
+									"type": "Text"
+								}
+							],
+							[
+								"plan_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Aute do anim esse amet ipsum et sint ad adipisicing exercitation cillum incididunt fugiat reprehenderit. Quis cupidatat nisi voluptate excepteur ex reprehenderit anim qui ut enim ad cupidatat reprehenderit sit irure."
+											}
+										}
+									]
+								}
+							],
+							[
+								"price_interval",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "experiment",
+									"type": "Text"
+								}
+							],
+							[
+								"is_featured",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"featured_badge",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "struck",
+									"type": "Text"
+								}
+							],
+							[
+								"cta",
+								{
+									"key": "e6ec0e13-1864-4a64-86d0-b9c40146d046",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "alive"
+									}
+								}
+							],
+							[
+								"feature_intro",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "library",
+									"type": "Text"
+								}
+							],
+							[
+								"feature_list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Veniam adipisicing minim incididunt anim ex ex."
+											}
+										}
+									]
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "written",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"callout": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui excepteur est officia sit et magna culpa pariatur ea non anim et ipsum. Id officia ex consectetur."
+						}
+					}
+				]
+			},
+			"tinted_background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,72 @@
+{
+  "format": "custom",
+  "id": "navlink",
+  "label": "Navlink",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "main_link": {
+        "type": "Link",
+        "config": {
+          "label": "Main Link",
+          "placeholder": "Only used if no sublinks exists",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "dropdown_label": {
+        "type": "Text",
+        "config": {
+          "label": "Dropdown Label",
+          "placeholder": ""
+        }
+      },
+      "sublinks": {
+        "type": "Group",
+        "config": {
+          "label": "Sublinks",
+          "repeat": true,
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            },
+            "description": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,strong,em,hyperlink"
+              }
+            },
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

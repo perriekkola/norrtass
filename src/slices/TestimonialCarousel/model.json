@@ -1,0 +1,66 @@
+{
+  "type": "SharedSlice",
+  "id": "testimonial_carousel",
+  "name": "TestimonialCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Carousel-style testimonial with quote, rating, user profile, and navigation arrows.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "testimonials": {
+          "type": "Group",
+          "config": {
+            "label": "Testimonials",
+            "fields": {
+              "rating": {
+                "type": "Number",
+                "config": {
+                  "label": "Rating"
+                }
+              },
+              "quote": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Quote"
+                }
+              },
+              "user_avatar": {
+                "type": "Image",
+                "config": {
+                  "label": "User Avatar"
+                }
+              },
+              "user_name": {
+                "type": "Text",
+                "config": {
+                  "label": "User Name"
+                }
+              },
+              "user_job_title": {
+                "type": "Text",
+                "config": {
+                  "label": "User Job Title"
+                }
+              }
+            }
+          }
+        },
+        "tinted_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tinted Background",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
