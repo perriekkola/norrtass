@@ -8,7 +8,6 @@ import SVG from 'react-inlinesvg';
 import { useCookieBanner } from '@/components/cookie-banner-context';
 import { CustomRichText } from '@/components/custom-rich-text';
 import { Container } from '@/components/layout/container';
-import { ModeToggle } from '@/components/mode-toggle';
 import { CustomSVG } from '@/components/svg';
 import { Button } from '@/components/ui/button';
 
@@ -157,8 +156,6 @@ const Footer = ({ prismicData }: { prismicData: FooterDocument }) => {
                 </li>
               )}
             </ul>
-
-            <ModeToggle className="bg-foreground/2 rounded-md" />
           </div>
         </div>
       </Container>

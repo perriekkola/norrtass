@@ -9,7 +9,6 @@ import SVG from 'react-inlinesvg';
 import { CartSheet } from '@/components/cart-sheet';
 import { CustomRichText } from '@/components/custom-rich-text';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { ModeToggle } from '@/components/mode-toggle';
 import { AnimatedBackground } from '@/components/motion-primitives/animated-background';
 import { ProgressiveBlur } from '@/components/motion-primitives/progressive-blur';
 import { CustomSVG } from '@/components/svg';
@@ -32,7 +31,6 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -266,9 +264,6 @@ const Navbar = ({ prismicData }: { prismicData: NavbarDocument }) => {
                           </div>
                         )}
                     </div>
-                    <SheetFooter>
-                      <ModeToggle className="w-full" showLabel />
-                    </SheetFooter>
                   </SheetContent>
                 </Sheet>
               </div>
