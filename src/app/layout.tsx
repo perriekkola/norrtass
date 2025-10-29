@@ -1,4 +1,4 @@
-import { Figtree } from 'next/font/google';
+import { Bricolage_Grotesque } from 'next/font/google';
 import { headers } from 'next/headers';
 import { PrismicPreview } from '@prismicio/next';
 
@@ -16,7 +16,7 @@ import { repositoryName } from '@/prismicio';
 
 import './globals.css';
 
-const figtree = Figtree({
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ['latin'],
 });
 
@@ -43,7 +43,7 @@ export default async function RootLayout({
   return (
     <html
       lang={langCode}
-      className={figtree.className}
+      className={bricolageGrotesque.className}
       suppressHydrationWarning
     >
       <head>
@@ -52,7 +52,7 @@ export default async function RootLayout({
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

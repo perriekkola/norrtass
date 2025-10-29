@@ -1,7 +1,7 @@
 /**
  * Supported locales for the application
  */
-export const SUPPORTED_LOCALES = ['sv-se', 'en-us'] as const;
+export const SUPPORTED_LOCALES = ['sv-se'] as const;
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
 /**
@@ -9,7 +9,6 @@ export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
  */
 export const LANGUAGE_NAMES: Record<SupportedLocale, string> = {
   'sv-se': 'Svenska',
-  'en-us': 'English',
 } as const;
 
 /**
