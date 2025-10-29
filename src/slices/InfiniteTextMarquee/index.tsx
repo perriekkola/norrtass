@@ -62,7 +62,7 @@ const InfiniteTextMarquee: FC<InfiniteTextMarqueeProps> = ({ slice }) => {
             {Array.from({ length: 10 }, (_, index) => (
               <div
                 key={index}
-                className="text-primary flex items-center whitespace-nowrap"
+                className="text-primary flex items-center py-4 whitespace-nowrap"
               >
                 <CustomRichText
                   field={text}

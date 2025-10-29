@@ -57,7 +57,7 @@ const FeatureGridShowcase: FC<FeatureGridShowcaseProps> = ({ slice }) => {
                     key={index}
                     field={feature.button}
                     className={cn(
-                      'group relative flex flex-col justify-end overflow-hidden rounded-(--card-radius) p-6 lg:min-h-[440px] lg:p-8',
+                      'group relative flex min-h-[224px] flex-col justify-end overflow-hidden rounded-(--card-radius) p-6 lg:min-h-[440px] lg:p-8',
                       isLarge ? 'lg:col-span-2' : 'lg:col-span-1'
                     )}
                   >
