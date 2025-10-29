@@ -31,7 +31,7 @@ const Footer = ({ prismicData }: { prismicData: FooterDocument }) => {
                 <PrismicNextLink field={prismicData.data.logo_link}>
                   <CustomSVG
                     src={prismicData.data.logo.url}
-                    className="text-primary h-auto max-h-[28px] w-auto max-w-[144px] lg:max-h-[34px] lg:max-w-[172px]"
+                    className="h-[36px] h-auto w-auto text-pink-700 lg:h-[44px] dark:text-pink-300"
                     title={prismicData.data.logo.alt}
                   />
                 </PrismicNextLink>

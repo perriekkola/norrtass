@@ -92,7 +92,7 @@ const Navbar = ({ prismicData }: { prismicData: NavbarDocument }) => {
                 <PrismicNextLink field={prismicData.data.logo_link}>
                   <CustomSVG
                     src={prismicData.data.logo.url}
-                    className="text-primary h-auto max-h-[34px] w-auto max-w-[172px]"
+                    className="h-[44px] w-auto text-pink-700 dark:text-pink-300"
                     title={prismicData.data.logo.alt}
                   />
                 </PrismicNextLink>
@@ -168,7 +168,7 @@ const Navbar = ({ prismicData }: { prismicData: NavbarDocument }) => {
                 <PrismicNextLink field={prismicData.data.logo_link}>
                   <CustomSVG
                     src={prismicData.data.logo.url}
-                    className="text-primary h-auto max-h-[28px] w-auto max-w-[144px]"
+                    className="h-[36px] w-auto text-pink-700 dark:text-pink-300"
                     title={prismicData.data.logo.alt}
                   />
                 </PrismicNextLink>
