@@ -87,6 +87,7 @@ export function CartSheet({
               ...item.metadata,
             },
           })),
+          cancelUrl: window.location.href,
         }),
       });
 

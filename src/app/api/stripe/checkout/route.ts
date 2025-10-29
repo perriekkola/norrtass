@@ -40,6 +40,11 @@ export async function POST(request: NextRequest) {
       process.env.NEXT_PUBLIC_SITE_URL ||
       'http://localhost:3000';
 
+    const cancelUrl =
+      typeof body.cancelUrl === 'string' && body.cancelUrl.length > 0
+        ? body.cancelUrl
+        : `${origin}?canceled=true`;
+
     // Create line items for Stripe
     const lineItems = await Promise.all(
       items.map(async ({ productId, priceId, quantity, metadata = {} }) => {
@@ -81,7 +86,7 @@ export async function POST(request: NextRequest) {
       payment_method_types: ['card'],
       line_items: lineItems,
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}?canceled=true`,
+      cancel_url: cancelUrl,
       metadata: {
         items_count: items.length.toString(),
       },

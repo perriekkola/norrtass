@@ -200,6 +200,7 @@ const ProductHero: FC<ProductHeroProps> = ({ slice, index, context }) => {
             size: selectedSize || '',
             source: 'product_hero',
           },
+          cancelUrl: window.location.href,
         }),
       });
 
