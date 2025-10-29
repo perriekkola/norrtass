@@ -146,7 +146,7 @@ const Navbar = ({ prismicData }: { prismicData: NavbarDocument }) => {
                         >
                           <ShoppingCart className="h-5 w-5" />
                           {getTotalItems() > 0 && (
-                            <span className="bg-primary text-primary-foreground absolute -top-2 -right-2 flex h-5 items-center justify-center rounded-full px-1.5 text-xs font-(--bold-text)">
+                            <span className="bg-primary text-primary-foreground absolute -top-2 -right-2 flex size-5 items-center justify-center rounded-full px-1.5 text-xs font-(--bold-text)">
                               {getTotalItems() > 9 ? '9+' : getTotalItems()}
                             </span>
                           )}
@@ -204,7 +204,7 @@ const Navbar = ({ prismicData }: { prismicData: NavbarDocument }) => {
                     >
                       <ShoppingCart className="h-5 w-5" />
                       {getTotalItems() > 0 && (
-                        <span className="bg-primary text-primary-foreground absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full text-xs font-medium">
+                        <span className="bg-primary text-primary-foreground absolute -top-1 -right-1 flex size-4 items-center justify-center rounded-full text-xs font-medium">
                           {getTotalItems() > 9 ? '9+' : getTotalItems()}
                         </span>
                       )}
