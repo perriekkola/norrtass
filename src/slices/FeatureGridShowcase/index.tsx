@@ -108,7 +108,7 @@ const FeatureGridShowcase: FC<FeatureGridShowcaseProps> = ({ slice }) => {
 
                         {/* Title */}
                         {feature.title && (
-                          <h3 className="text-2xl font-(--bold-text) text-white lg:text-4xl">
+                          <h3 className="text-3xl font-(--bold-text) text-white lg:text-5xl">
                             {feature.title}
                           </h3>
                         )}

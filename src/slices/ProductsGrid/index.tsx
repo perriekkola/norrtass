@@ -258,7 +258,7 @@ const ProductsGrid: FC<ProductsGridProps> = ({ slice, context }) => {
         {displayedProducts.length > 0 && (
           <>
             <div className={cn('grid gap-4', getGridCols())}>
-              {displayedProducts.map((product) => {
+              {displayedProducts.map((product, index) => {
                 const stripeProductId = product.data.stripe_product_id;
                 const stripeProductData = stripeProductId
                   ? stripeProducts[stripeProductId]
@@ -269,7 +269,7 @@ const ProductsGrid: FC<ProductsGridProps> = ({ slice, context }) => {
 
                 return (
                   <ProductCard
-                    key={product.id}
+                    key={`${product.id}-${index}`}
                     product={product}
                     ctaButtonLabel={cta_button_label || undefined}
                     locale={context?.locale as string}
