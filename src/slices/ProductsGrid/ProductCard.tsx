@@ -38,7 +38,7 @@ export type ProductCardProps = {
 
 export const ProductCard: FC<ProductCardProps> = ({
   product,
-  ctaButtonLabel = 'Add to Cart',
+  ctaButtonLabel = 'Lägg i varukorg',
   locale,
   stripeProduct,
   stripeLoading = false,

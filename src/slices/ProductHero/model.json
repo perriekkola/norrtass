@@ -25,10 +25,7 @@
                   "previous_price",
                   {
                     "id": "sizes",
-                    "fields": [
-                      "size",
-                      "disabled"
-                    ]
+                    "fields": ["size", "disabled"]
                   },
                   "stripe_product_id"
                 ]
@@ -93,7 +90,7 @@
           "type": "Text",
           "config": {
             "label": "Cart Button Label",
-            "placeholder": "Add to Cart"
+            "placeholder": "Lägg i varukorg"
           }
         },
         "buy_button_label": {

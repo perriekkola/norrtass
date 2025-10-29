@@ -44,7 +44,7 @@ export const SizeSelectionModal: FC<SizeSelectionModalProps> = ({
   stripeProduct,
   sizes,
   featuredImage,
-  ctaButtonLabel = 'Add to Cart',
+  ctaButtonLabel = 'Lägg i varukorg',
   isLoading = false,
   locale,
 }) => {

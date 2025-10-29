@@ -606,7 +606,7 @@ const ProductHero: FC<ProductHeroProps> = ({ slice, index, context }) => {
                         <Plus className="h-4 w-4" />
                         {isFilled.keyText(cart_button_label)
                           ? cart_button_label
-                          : 'Add to Cart'}
+                          : 'Lägg i varukorg'}
                       </>
                     )}
                   </Button>
