@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
 
         // Create product name with size if provided
         const productName = metadata.size
-          ? `${product.name} - Size ${metadata.size}`
+          ? `${product.name} - Storlek ${metadata.size}`
           : product.name;
 
         return {
@@ -83,7 +83,8 @@ export async function POST(request: NextRequest) {
     // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
-      payment_method_types: ['card'],
+      payment_method_types: ['card', 'klarna'],
+      locale: 'sv',
       line_items: lineItems,
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: cancelUrl,
